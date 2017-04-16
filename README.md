@@ -1,4 +1,4 @@
-# A \<FullScreenVideo \/\> on top of [react-native-video](https://github.com/react-native-community/react-native-video/)
+# A FullScreenVideo on top of [react-native-video](https://github.com/react-native-community/react-native-video/)
 
 Import component:
 ```
