@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/mostafa/react-native-fullscreen-video.git"
   },
+  "dependencies": {
+    "react-native-video": "latest",
+    "react-native": "latest"
+  },
   "keywords": [
     "react-native",
     "react-native-video"
