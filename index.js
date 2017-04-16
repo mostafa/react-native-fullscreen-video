@@ -8,7 +8,7 @@ import Video from 'react-native-video';
 var {height, width} = Dimensions.get('window');
 const statusBarSize = 25;
 
-export default class FullScreenPlayer extends Component {
+export default class FullScreenVideo extends Component {
   constructor(props) {
     super(props);
 
