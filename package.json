@@ -1,6 +1,6 @@
 {
   "name": "react-native-fullscreen-video",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A FullScreenVideo on top of react-native-video",
   "main": "index.js",
   "repository": {
