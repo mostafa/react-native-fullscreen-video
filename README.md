@@ -19,6 +19,9 @@ To install react-native-fullscreen-video, you can use install from git or use a 
   $ npm install --save react-native-fullscreen-video
   ~~~~
 
+## Example
+A simple app is provided as [example](https://github.com/mostafa/react-native-fullscreen-video/tree/master/example).
+
 ## Usage
 Although not mandatory, you can use [react-native-router-flux](https://github.com/aksonov/react-native-router-flux) to define a scene containing this component and then pass the necessary arguments, so that the component plays the video. An example app would look like this:
 
@@ -26,26 +29,27 @@ Although not mandatory, you can use [react-native-router-flux](https://github.co
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
 import { Scene, Router } from 'react-native-router-flux';
-import FullScreenVideo from 'fullscreenvideo';
+import FullScreenVideo from 'react-native-fullscreen-video';
+import MainView from './app/mainview';
 
-export default class App extends Component {
+export default class example extends Component {
   render() {
     return (
       <Router>
         <Scene key="root">
           <Scene key="main" component={MainView} initial={true} hideNavBar={true} />
-		  <Scene
+          <Scene
             key="fullscreenVideo"
             component={FullScreenVideo}
             hideNavBar={true}
             duration={1} />
-          </Scene>
+        </Scene>
       </Router>
     );
   }
 }
 
-AppRegistry.registerComponent('App', () => App);
+AppRegistry.registerComponent('example', () => example);
 ~~~~
 
 ~~~~
@@ -59,7 +63,7 @@ By tapping on the `TouchableOpacity` component (although you can use other compo
 
 ## Limitation(s)
 1. Your app should be locked in [portrait orientation](http://stackoverflow.com/a/34086828/6999563), for this component to work.
-2. I haven't tested it with any other routing/navigation package.
+2. I haven't tested it with any other routing/navigation package, other than react-native-router-flux.
 3. Not all properties are supported right now for the internal video component.
 4. It doesn't contain any player controls.
 
