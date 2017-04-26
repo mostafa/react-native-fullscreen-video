@@ -8,7 +8,7 @@
     "url": "git+https://github.com/mostafa/react-native-fullscreen-video.git"
   },
   "dependencies": {
-    "react-native-video": "latest"
+    "react-native-video": "git+https://github.com/react-native-community/react-native-video#master"
   },
   "keywords": [
     "react-native",
