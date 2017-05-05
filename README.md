@@ -5,7 +5,7 @@ A full-screen video component on top of [react-native-video](https://github.com/
 [![npm version](https://badge.fury.io/js/react-native-fullscreen-video.svg)](https://badge.fury.io/js/react-native-fullscreen-video)
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-One of the main issues of react-native-video is making video full-screen on android. To solve this issue, I've made this package that acts as full-screen video component.
+One of the main issues of react-native-video is making video full-screen on Android. To solve this issue, I've made this package that acts as a full-screen video component.
 
 ## Installation
 To install react-native-fullscreen-video, you can use install from git or use a javascript package manager (e.g. npm or yarn).
@@ -20,10 +20,10 @@ To install react-native-fullscreen-video, you can use install from git or use a 
   ~~~~
 
 ## Example
-A simple app is provided as [example](https://github.com/mostafa/react-native-fullscreen-video/tree/master/example).
+A simple app is provided as an [example](https://github.com/mostafa/react-native-fullscreen-video/tree/master/example).
 
 ## Usage
-Although not mandatory, you can use [react-native-router-flux](https://github.com/aksonov/react-native-router-flux) to define a scene containing this component and then pass the necessary arguments, so that the component plays the video. An example app would look like this:
+Although not mandatory, you can use [react-native-router-flux](https://github.com/aksonov/react-native-router-flux) to define a scene containing this component and then pass the necessary arguments, so that the component plays the video. The example app looks like this:
 
 ~~~~
 import React, { Component } from 'react';
@@ -59,10 +59,10 @@ import { Actions } from 'react-native-router-flux';
 ...
 ~~~~
 
-By tapping on the `TouchableOpacity` component (although you can use other components), the full-screen video player would slide in and play the video in full-screen.
+By tapping on the `TouchableOpacity` component (or your own desired component), the full-screen video component would slide in and play the video in full-screen.
 
 ## Limitation(s)
-1. Your app should be locked in [portrait orientation](http://stackoverflow.com/a/34086828/6999563), for this component to work.
+1. `FIXED` <s>Your app should be locked in [portrait orientation](http://stackoverflow.com/a/34086828/6999563), for this component to work.</s> Your app no longer needs to be locked in portrait orientation.
 2. I haven't tested it with any other routing/navigation package, other than react-native-router-flux.
 3. Not all properties are supported right now for the internal video component.
 4. It doesn't contain any player controls.
