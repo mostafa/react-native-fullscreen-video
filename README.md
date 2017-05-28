@@ -3,6 +3,7 @@
 A full-screen video component on top of [react-native-video](https://github.com/react-native-community/react-native-video/)
 
 [![npm version](https://badge.fury.io/js/react-native-fullscreen-video.svg)](https://badge.fury.io/js/react-native-fullscreen-video)
+[![npm](https://img.shields.io/npm/dt/react-native-fullscreen-video.svg)](https://www.npmjs.com/package/react-native-fullscreen-video)
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 One of the main issues of react-native-video is making video full-screen on Android. To solve this issue, I've made this package that acts as a full-screen video component.

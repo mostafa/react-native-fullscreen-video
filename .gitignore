@@ -1,0 +1,4 @@
+generate-compatibility-report.js
+report/*
+node_modules/*
+assets/*
