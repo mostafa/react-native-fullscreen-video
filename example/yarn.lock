@@ -2942,6 +2942,10 @@ react-native-fullscreen-video@0.0.6:
   dependencies:
     react-native-video latest
 
+react-native-orientation@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-orientation/-/react-native-orientation-2.0.0.tgz#d415910d3496c57e9fc57c899cb4c8beb8be4a49"
+
 react-native-router-flux@3.38.0:
   version "3.38.0"
   resolved "https://registry.yarnpkg.com/react-native-router-flux/-/react-native-router-flux-3.38.0.tgz#f5f8ec2875b46f96f61006ff502d0d80268e6ce2"

@@ -10,7 +10,7 @@
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.4",
     "react-native-fullscreen-video": "0.0.6",
-    "react-native-orientation": "git+https://github.com/yamill/react-native-orientation.git",
+    "react-native-orientation": "^2.0.0",
     "react-native-router-flux": "3.38.0"
   },
   "devDependencies": {
