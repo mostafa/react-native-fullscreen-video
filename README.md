@@ -1,4 +1,4 @@
-# react-native-fullscreen-video
+# ![](https://raw.githubusercontent.com/mostafa/react-native-fullscreen-video/master/assets/RNFSV-logo.png) react-native-fullscreen-video
 
 A full-screen video component on top of [react-native-video](https://github.com/react-native-community/react-native-video/)
 
@@ -7,6 +7,9 @@ A full-screen video component on top of [react-native-video](https://github.com/
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 One of the main issues of react-native-video is making video full-screen on Android. To solve this issue, I've made this package that acts as a full-screen video component.
+
+## Demo
+![](https://raw.githubusercontent.com/mostafa/react-native-fullscreen-video/master/assets/demo.gif)
 
 ## Installation
 To install react-native-fullscreen-video, you can use install from git or use a javascript package manager (e.g. npm or yarn).
