@@ -23,11 +23,34 @@ To install react-native-fullscreen-video, you can use install from git or use a 
   $ npm install --save react-native-fullscreen-video
   ~~~~
 
-## Example
-A simple app is provided as an [example](https://github.com/mostafa/react-native-fullscreen-video/tree/master/example).
+## Examples
+Two example apps are created to demonstrate how to use this package.  
 
-## Usage
-Although not mandatory, you can use [react-native-router-flux](https://github.com/aksonov/react-native-router-flux) to define a scene containing this component and then pass the necessary arguments, so that the component plays the video. The example app looks like this:
+[First one](https://github.com/mostafa/react-native-fullscreen-video/tree/master/examples/simple-example) is a simple app that uses no special setup for navigation/routing and state management.
+
+In the [second example](https://github.com/mostafa/react-native-fullscreen-video/tree/master/examples/flux-example), [react-native-router-flux](https://github.com/aksonov/react-native-router-flux) is used to make two scenes and switch between them using the provided routing functions (Actions).
+
+## Usage with no-setup
+Simply define a view with flex set to 1 containing `FullScreenVideo` component:
+
+~~~
+import React, { Component } from 'react';
+import { View } from 'react-native';
+import FullscreenVideo from 'react-native-fullscreen-video';
+
+export default class App extends Component<{}> {
+  render() {
+    return (
+      <View style={{flex: 1}}>
+        <FullscreenVideo src={{uri: "<video-url>"}} />
+      </View>
+    );
+  }
+}
+~~~
+
+## Usage with [react-native-router-flux](https://github.com/aksonov/react-native-router-flux)
+Although not mandatory, you can use  [react-native-router-flux](https://github.com/aksonov/react-native-router-flux) to define a scene containing this component and then pass the necessary arguments, so that the component plays the video. The example app looks like this:
 
 ~~~~
 import React, { Component } from 'react';
@@ -67,7 +90,7 @@ By tapping on the `TouchableOpacity` component (or your own desired component), 
 
 ## Limitation(s)
 1. `FIXED` <s>Your app should be locked in [portrait orientation](http://stackoverflow.com/a/34086828/6999563), for this component to work.</s> Your app no longer needs to be locked in portrait orientation.
-2. I haven't tested it with any other routing/navigation package, other than react-native-router-flux.
+2. `FIXED` <s>I haven't tested it with any other routing/navigation package, other than react-native-router-flux.</s> No special routing/navigation is needed, the component works independently.
 3. Not all properties are supported right now for the internal video component.
 4. It doesn't contain any player controls.
 
